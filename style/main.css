@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --darkBlue: hsl(249, 10%, 26%);
+  --grayishBlue: hsl(246, 25%, 77%);
+  --blue: hsl(248, 32%, 49%);
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: url("../images/bg-intro-desktop.png");
+  background-color: var(--red);
+}
+
+.text {
+  max-width: 600px;
+  padding: 10px;
+  width: 95%;
+  color: white;
+  margin: 10px auto;
+}
+
+.text h1 {
+  font-size: 55px;
+  margin-bottom: 15px;
+  line-height: 1.25;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.form {
+  max-width: 600px;
+  width: 95%;
+  border-radius: 10px;
+  max-height: 800px;
+  min-height: 600px;
+  margin: 10px auto;
+}
+
+.form > div {
+  background-color: white;
+  border-radius: 12px;
+  margin-top: 15px;
+  padding: 30px;
+}
+
+.form > div input {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 20px 20px 20px 30px;
+  margin: 15px 0;
+  font-size: 18px;
+  border: 1px solid var(--grayishBlue);
+  outline-color: var(--blue);
+  outline-width: 2px;
+}
+
+.form > div button[type="submit"] {
+  background-color: var(--green);
+  text-transform: uppercase;
+  font-weight: normal;
+  color: white;
+  display: block;
+  padding: 20px;
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  letter-spacing: 2px;
+  border: none;
+  -webkit-box-shadow: inset -1px -4px 5px var(--darkBlue);
+          box-shadow: inset -1px -4px 5px var(--darkBlue);
+}
+
+.form > button {
+  background-color: var(--blue);
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 18px;
+  font-size: 18px;
+  font-weight: lighter;
+  border-radius: 12px;
+  -webkit-box-shadow: 1px 4px 5px var(--darkBlue);
+          box-shadow: 1px 4px 5px var(--darkBlue);
+}
+
+.form > button span {
+  font-weight: bold;
+}
+
+.form p span {
+  color: var(--red);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url("../images/bg-intro-mobile.png");
+  }
+  h1 {
+    font-size: 32px !important;
+    font-weight: 600;
+  }
+  .text {
+    text-align: center;
+    margin: 35px auto 25px;
+  }
+  button[type="submit"] {
+    font-size: 16px !important;
+  }
+  .form p {
+    text-align: center !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
